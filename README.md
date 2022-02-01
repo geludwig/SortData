@@ -1,6 +1,6 @@
 # SortData
 
-Algorithm to sort data from csv file and rearrange it from column to row. Then save it again to csv. Batch and Powershell scripts included to install Python and packages without user interaction.
+Algorithm to sort data from csv file and rearrange it from column to row. Batch and Powershell scripts included to install Python and packages without user interaction.
 
 IMPORT CSV STRUCTURE
 - first column contains full name of persons
