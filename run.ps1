@@ -1,4 +1,4 @@
-﻿"DOWNLOADING SCRIPT"
+"DOWNLOADING SORT SCRIPT"
 wget https://raw.githubusercontent.com/geludwig/SortData/main/SortAlgorithm.py -OutFile "$env:USERPROFILE\SortData\SortAlgorithm.py"
 
 "CHECK PYTHON INSTALLATION"
@@ -16,6 +16,7 @@ if (Test-Path $fileToCheck -PathType leaf){
 "INSTALL PYTHON PACKAGES"
 & "C:\Program Files\Python310\Scripts\pip.exe" install pandas
 
-"START SORT ALGORITHM"
+"DONE"
+pause
 ii "$env:USERPROFILE\SortData\"
 ii "$env:USERPROFILE\SortData\SortAlgorithm.py"
