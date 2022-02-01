@@ -37,4 +37,4 @@ wget https://raw.githubusercontent.com/geludwig/SortData/main/SortAlgorithm.py -
 pause
 
 ii "$env:USERPROFILE\SortData\"
-Start-Process -FilePath "$env:USERPROFILE\SortData\SortAlgorithm.py"
+Start-Process -FilePath "$env:USERPROFILE\SortData\SortAlgorithm.py" -WorkingDirectory "$env:USERPROFILE\SortData\"
