@@ -32,7 +32,7 @@ if (Test-Path -Path "$env:USERPROFILE\AppData\Roaming\Python\Python310\site-pack
 
 "UPDATING PYTHON SCRIPT"
 Remove-Item "$env:USERPROFILE\SortData\SortAlgorithm.py"
-#wget https://raw.githubusercontent.com/geludwig/SortData/main/SortAlgorithm.py -OutFile "$env:USERPROFILE\SortData\SortAlgorithm.py"
+wget https://raw.githubusercontent.com/geludwig/SortData/main/SortAlgorithm.py -OutFile "$env:USERPROFILE\SortData\SortAlgorithm.py"
 
 "DONE"
 pause
