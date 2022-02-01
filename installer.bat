@@ -1,7 +1,7 @@
 @echo off
 
 echo CHECK INTERNET
-ping www.google.com -n 1 | find "Reply" > nul
+ping www.google.com -n 1 | find "Reply" > NUL
 IF errorlevel 1 (
 	echo NO INTERNET CONNECTION, EXITING
 	pause
@@ -12,7 +12,7 @@ echo CHECK INSTALL PATH
 if not exist "%userprofile%\SortData\bin" mkdir "%userprofile%\SortData\bin"
 
 echo UPDATE FILES
-copy "%cd%\installer.bat" "%userprofile%\SortData\" >NUL
+copy "%cd%\installer.bat" "%userprofile%\SortData\" > NUL
 if exist "%userprofile%\SortData\bin\run.ps1" del "%userprofile%\SortData\bin\run.ps1"
 
 echo DOWNLOAD PAYLOAD
