@@ -14,7 +14,7 @@ if (Test-Path $fileToCheck -PathType leaf){
 }
 
 "INSTALL PYTHON PACKAGES"
-& "C:\Program Files\Python310\Scripts\pip.exe" install pandas --no-warn-script-location
+& "C:\Program Files\Python310\Scripts\pip.exe" install pandas --no-warn-script-location > NUL
 
 "DONE"
 pause
