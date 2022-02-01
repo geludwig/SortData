@@ -15,7 +15,7 @@ echo UPDATE FILES
 copy "%cd%\installer.bat" "%userprofile%\SortData\" >NUL
 if exist "%userprofile%\SortData\bin\run.ps1" del "%userprofile%\SortData\bin\run.ps1"
 
-echo DOWNLOADING PAYLOAD
+echo DOWNLOAD PAYLOAD
 powershell -Command "Invoke-WebRequest https://raw.githubusercontent.com/geludwig/SortData/main/run.ps1 -OutFile "%userprofile%\SortData\bin\run.ps1""
 
 echo INSTALLER FINISHED
