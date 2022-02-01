@@ -11,6 +11,15 @@ if (Test-Path $fileToCheck -PathType leaf){
 	wget https://www.python.org/ftp/python/3.10.2/python-3.10.2-amd64.exe -OutFile "$env:USERPROFILE\SortData\temp\python-installer.exe"
 	Start-Process "$env:USERPROFILE\SortData\temp\python-installer.exe" -argumentlist "/quiet InstallAllUsers=1 PrependPath=1" -wait
 	Remove-Item -Recurse -Force "$env:USERPROFILE\SortData\temp" 
+	$fileToCheck = "C:\Program Files\Python310\python.exe"
+	if (Test-Path $fileToCheck -PathType leaf){
+		"PYTHON SUCCESSFULLY INSTALLED"
+	}else{
+		"INSTALLATION ERROR, EXITING"
+		pause
+		exit
+	}
+	
 }
 
 "INSTALL PYTHON PACKAGES"
