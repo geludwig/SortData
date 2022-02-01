@@ -33,8 +33,7 @@ if (Test-Path -Path "$env:USERPROFILE\AppData\Roaming\Python\Python310\site-pack
 "UPDATING PYTHON SCRIPT"
 wget https://raw.githubusercontent.com/geludwig/SortData/main/SortAlgorithm.py -OutFile "$env:USERPROFILE\SortData\SortAlgorithm.py"
 
-"DONE"
+"RUN SortAlgorithm.py' AFTER CLOSING THIS WINDOW TO START"
 pause
 
 ii "$env:USERPROFILE\SortData\"
-Start-Process -FilePath "$env:USERPROFILE\SortData\SortAlgorithm.py" -WorkingDirectory "$env:USERPROFILE\SortData\"
