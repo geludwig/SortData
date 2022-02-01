@@ -11,12 +11,12 @@ print('Import file requirements:')
 print('- 3 columns with header (name, testdate, pcr)')
 print('- csv must use semicolon as delimiter')
 print('- filename: values.csv')
-print('- CSV and Python Script must share same directory)
+print('- CSV and Python Script must share same directory')
 print(' ')
 
 # CHECK FOR FILE
 if os.path.isfile('values.csv''):
-	print ('File exist')
+	pass
 else:
 	print('VALUES:CSV NOT FOUND, EXITING')
 	input("Press Enter to continue...")
