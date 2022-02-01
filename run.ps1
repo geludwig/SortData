@@ -18,5 +18,6 @@ if (Test-Path $fileToCheck -PathType leaf){
 
 "DONE"
 pause
+
 ii "$env:USERPROFILE\SortData\"
 ii "$env:USERPROFILE\SortData\SortAlgorithm.py"
