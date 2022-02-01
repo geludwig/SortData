@@ -33,19 +33,6 @@ if (Test-Path -Path "$env:USERPROFILE\AppData\Roaming\Python\Python310\site-pack
 "UPDATING PYTHON SCRIPT"
 wget https://raw.githubusercontent.com/geludwig/SortData/main/SortAlgorithm.py -OutFile "$env:USERPROFILE\SortData\SortAlgorithm.py"
 
-"COPY VALUES.CSV"
-$fileToCheck = "$env:USERPROFILE\SortData\values.csv"
-if (Test-Path $fileToCheck -PathType leaf){
-	"VALUES.CSV ALREADY IN DIRECTORY"
-}else{
-	$fileToCheck = "$PSScriptRoot\values.csv"
-	if (Test-Path $fileToCheck -PathType leaf){
-		Copy-Item "$PSScriptRoot\values.csv" -Destination "$env:USERPROFILE\SortData\" | Out-Null
-	}else{
-		"VALUES.CSV NOT AVAILABLE"
-	}
-}
-
 "DONE"
 pause
 
