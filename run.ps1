@@ -15,6 +15,15 @@ if (Test-Path $fileToCheck -PathType leaf){
 
 "INSTALL PYTHON PACKAGES"
 & "C:\Program Files\Python310\Scripts\pip.exe" install pandas --no-warn-script-location hg st 2>&1 | Out-Null
+
+if (Test-Path -Path "$env:USERPROFILE\AppData\Roaming\Python\Python310\site-packages\pandas") {
+    "PACKAGES INSTALLED"
+} else {
+    "PACKAGES MISSING, EXITING"
+    pause
+    exit
+}
+
 "DONE"
 pause
 
