@@ -16,4 +16,4 @@ EXPORT CSV STRUCTURE
 
 INSTALL SCRIPT
 - install.bat creates dir in "%userprofile%\SortData", downloads and executes "run.ps1"
-- run.ps1 installs Python, donwloads "SortData.py" and executes it
+- run.ps1 installs Python, downloads "SortData.py" and runs it
