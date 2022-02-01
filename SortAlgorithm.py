@@ -1,5 +1,6 @@
 import pandas as pd
 import csv
+import os.path
 
 skip = 2
 i = 0
@@ -8,9 +9,18 @@ data = []
 # START
 print('Import file requirements:')
 print('- 3 columns with header (name, testdate, pcr)')
-print('- file: values.csv')
 print('- csv must use semicolon as delimiter')
+print('- filename: values.csv')
+print('- CSV and Python Script must share same directory)
 print(' ')
+
+# CHECK FOR FILE
+if os.path.isfile('values.csv''):
+	print ('File exist')
+else:
+	print('VALUES:CSV NOT FOUND, EXITING')
+	input("Press Enter to continue...")
+	sys.exit()
 
 while skip == 2:
 	input1 = input('Skip zeros in column "pcr"? Type "yes" or leave empty: ')
