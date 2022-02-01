@@ -34,7 +34,7 @@ if (Test-Path -Path "$env:USERPROFILE\AppData\Roaming\Python\Python310\site-pack
 wget https://raw.githubusercontent.com/geludwig/SortData/main/SortAlgorithm.py -OutFile "$env:USERPROFILE\SortData\SortAlgorithm.py"
 
 "DONE"
+"START SORTING BY RUNNING 'SortAlgorithm.py'"
 pause
 
 ii "$env:USERPROFILE\SortData\"
-ii "$env:USERPROFILE\SortData\SortAlgorithm.py"
