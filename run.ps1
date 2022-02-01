@@ -34,6 +34,7 @@ if (Test-Path -Path "$env:USERPROFILE\AppData\Roaming\Python\Python310\site-pack
 $fileToCheck = "$env:USERPROFILE\SortData\SortAlgorithm.py"
 if (Test-Path $fileToCheck -PathType leaf){
 	Remove-Item "$env:USERPROFILE\SortData\SortAlgorithm.py"
+	Start-Sleep -Seconds 2
 	wget https://raw.githubusercontent.com/geludwig/SortData/main/SortAlgorithm.py -OutFile "$env:USERPROFILE\SortData\SortAlgorithm.py"
 }else{
 	wget https://raw.githubusercontent.com/geludwig/SortData/main/SortAlgorithm.py -OutFile "$env:USERPROFILE\SortData\SortAlgorithm.py"
