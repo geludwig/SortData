@@ -1,6 +1,3 @@
-"DOWNLOADING SORT SCRIPT"
-wget https://raw.githubusercontent.com/geludwig/SortData/main/SortAlgorithm.py -OutFile "$env:USERPROFILE\SortData\SortAlgorithm.py"
-
 "CHECK PYTHON INSTALLATION"
 $fileToCheck = "C:\Program Files\Python310\python.exe"
 if (Test-Path $fileToCheck -PathType leaf){
@@ -32,6 +29,10 @@ if (Test-Path -Path "$env:USERPROFILE\AppData\Roaming\Python\Python310\site-pack
     pause
     exit
 }
+
+"UPDATING PYTHON SCRIPT"
+Remove-Item "$env:USERPROFILE\SortData\SortAlgorithm.py"
+wget https://raw.githubusercontent.com/geludwig/SortData/main/SortAlgorithm.py -OutFile "$env:USERPROFILE\SortData\SortAlgorithm.py"
 
 "DONE"
 pause
