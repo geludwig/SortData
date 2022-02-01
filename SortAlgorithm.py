@@ -18,7 +18,7 @@ print(' ')
 if os.path.isfile('values.csv'):
 	pass
 else:
-	print('VALUES:CSV NOT FOUND, EXITING')
+	print('VALUES.CSV NOT FOUND, EXITING')
 	input("Press Enter to continue...")
 	sys.exit()
 
