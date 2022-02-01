@@ -15,7 +15,7 @@ print('- CSV and Python Script must share same directory')
 print(' ')
 
 # CHECK FOR FILE
-if os.path.isfile('values.csv''):
+if os.path.isfile('values.csv'):
 	pass
 else:
 	print('VALUES:CSV NOT FOUND, EXITING')
