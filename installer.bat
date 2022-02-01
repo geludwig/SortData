@@ -1,7 +1,7 @@
 @echo off
 
 echo CHECK INTERNET
-ping www.google.com -n 1 | find "Reply" > NUL
+ping www.google.com -n 1 > NUL
 IF errorlevel 1 (
 	echo NO INTERNET CONNECTION, EXITING
 	pause
